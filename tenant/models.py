@@ -51,6 +51,7 @@ class Ong(TenantAwareModel):
     descricao = models.TextField()
 
     class Meta:
+        unique_together = ("cnpj", "email")
         verbose_name = "Ong"
         verbose_name_plural = "Ong's"
 
