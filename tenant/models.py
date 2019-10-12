@@ -6,7 +6,6 @@ CARGO_DIRIGENTE = (
     ('FRE', 'Freelancer'),
 )
 
-
 CAUSAS = (
     ("Social", "Causas Sociais"),
 )
