@@ -66,6 +66,6 @@ class Dirigente(TenantAwareModel):
 
 
 class Fornecedor(TenantAwareModel):
-    """Esta classe modela os fonercedores
+    """Esta classe modela os fornecedores
     """
     pass
