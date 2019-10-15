@@ -11,3 +11,5 @@ db.sqlite3
 requirements-dev.txt
 migrations/
 .env
+media
+*/migrations/

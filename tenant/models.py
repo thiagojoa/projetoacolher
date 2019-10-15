@@ -45,7 +45,7 @@ class Ong(TenantAwareModel):
     cnpj = models.CharField(unique=True, max_length=16, blank=True, null=True)
     is_active = models.BooleanField(default=True, null=False)
     phone_number = models.CharField(max_length=15, blank=True, null=True)
-    email = models.CharField(max_length=50, blank=True, null=True)
+    email = models.EmailField()
     website = models.URLField()
     facebook_ong = models.URLField()
     descricao = models.TextField()
@@ -62,10 +62,17 @@ class Ong(TenantAwareModel):
 class Dirigente(TenantAwareModel):
     """Esta classe modela os dirigentes
     """
+    nome = models.CharField(max_length=200)
+    email = models.EmailField()
     cargo = models.CharField(max_length=3, choices=CARGO_DIRIGENTE, default=None)
 
 
 class Fornecedor(TenantAwareModel):
     """Esta classe modela os fornecedores
     """
-    pass
+    nome = models.CharField(max_length=200)
+    endereco = models.CharField(max_length=200)
+    cnpj = models.CharField(unique=True, max_length=16, blank=True, null=True)
+    is_active = models.BooleanField(default=True, null=False)
+    phone_number = models.CharField(max_length=15, blank=True, null=True)
+    email = models.EmailField()
