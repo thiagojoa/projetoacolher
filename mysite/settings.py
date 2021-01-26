@@ -17,7 +17,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 # Allow all host headers
 #ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
-ALLOWED_HOSTS= ['127.0.0.1', '.localhost', 'www.acolherjoanopolis.org.br']
+ALLOWED_HOSTS= ['www.acolherjoanopolis.org.br']
 
 # Application definition
 
